@@ -1,4 +1,13 @@
+# Node modules
 node_modules/
+
+# Environment files
 .env
+.env.development
+.env.production
+
+# Mac OS Files
 .DS_Store
+
+# Typescript output directory
 dist/
