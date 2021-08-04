@@ -10,7 +10,10 @@
     "build:start": "node ./dist/index.js",
     "build-and-start": "npm-run-all build build:start",
     "start": "ts-node ./src/index.ts",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "prettier:check": "prettier src/ --check",
+    "prettier:fix": "prettier src/ --write"
   },
   "engines": {
     "node": "^16.0.0",

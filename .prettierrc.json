@@ -3,5 +3,7 @@
   "semi": false,
   "singleQuote": true,
   "printWidth": 120,
-  "endOfLine": "auto"
+  "endOfLine": "auto",
+  "parser": "typescript",
+  "bracketSpacing": true
 }
