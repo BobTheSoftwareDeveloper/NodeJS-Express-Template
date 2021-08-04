@@ -1,15 +1,12 @@
 import http from 'http'
 import config from './config/config'
 import { app } from './app'
+import { errorHandler } from './utils/errorHandler'
 
 const port = config.PORT
 
 process.on('uncaughtException', (err) => {
-  console.error('error happened', err)
-})
-
-process.on('unhandledRejection', (err) => {
-  console.error('error happened', err)
+  errorHandler(err, 'uncaughtException')
 })
 
 const httpServer = new http.Server(app)
